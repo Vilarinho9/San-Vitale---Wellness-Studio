@@ -1282,3 +1282,66 @@ section {
 .service {
   display: none;
 }
+@media (max-width: 620px) {
+  header {
+    height: 76px;
+    padding: 0 14px;
+    gap: 10px;
+  }
+
+  .logo {
+    max-width: 170px;
+    overflow: hidden;
+  }
+
+  .logo-img {
+    width: 46px !important;
+    height: 46px !important;
+    object-fit: contain;
+  }
+
+  .logo-text h1 {
+    font-size: 28px !important;
+    line-height: 0.9;
+  }
+
+  .logo-text span {
+    font-size: 10px !important;
+    letter-spacing: 3px;
+  }
+
+  .btn-agendar {
+    display: none !important;
+  }
+
+  .menu {
+    display: flex !important;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-left: auto;
+  }
+
+  #nav {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 20px 35px rgba(0,0,0,.08);
+  }
+
+  #nav.show {
+    display: flex;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+}
