@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>San Vitale - Wellness Studio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <a href="#inicio" class="logo">
+    <img src="logo.jpeg" alt="San Vitale" class="logo-img">
+
+    <div class="logo-text">
+      <h1>San Vitale</h1>
+      <span>WELLNESS STUDIO</span>
+    </div>
+  </a>
+
+  <nav id="nav">
+    <a href="#inicio">Início</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#experiencias">Experiências</a>
+    <a href="#empresas">Empresas</a>
+    <a href="#cursos">Cursos</a>
+  </nav>
+
+  <a href="#agendamento" class="btn-agendar">
+    <span class="wpp-icon"></span>
+    Quero meu agendamento
+  </a>
+
+  <button class="menu" onclick="toggleMenu()">☰</button>
+</header>
+
+<main>
+
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h2>O cuidado que seu corpo pede.</h2>
+      <h3>No espaço mais acolhedor e humanizado do Piauí.</h3>
+
+      <p>
+        Cada detalhe foi pensado para proporcionar equilíbrio, relaxamento e bem-estar para corpo, mente e energia.
+      </p>
+
+      <div class="hero-tags">
+        <div class="tag">
+          <i>
+            <svg viewBox="0 0 24 24">
+              <path d="M5 21c10-2 14-10 14-16-6 0-14 4-16 14"></path>
+            </svg>
+          </i>
+          <span>Terapias Corporais</span>
+        </div>
+
+        <div class="tag">
+          <i>
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M5.5 21a8.5 8.5 0 0 1 13 0"></path>
+            </svg>
+          </i>
+          <span>Terapias Transpessoais</span>
+        </div>
+
+        <div class="tag">
+          <i>
+            <svg viewBox="0 0 24 24">
+              <path d="M13 2L3 14h7l-1 8 10-12h-7z"></path>
+            </svg>
+          </i>
+          <span>Terapias Vibracionais</span>
+        </div>
+
+        <div class="tag">
+          <i>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21s7-5 7-12a7 7 0 1 0-14 0c0 7 7 12 7 12z"></path>
+              <circle cx="12" cy="9" r="2.5"></circle>
+            </svg>
+          </i>
+          <span>Localização Premium</span>
+        </div>
+      </div>
+
+      <div class="aviso-publico">
+        Venha nos visitar — espaço aberto para hóspedes e público em geral
+      </div>
+
+      <a href="#agendamento" class="btn">
+        <span class="wpp-icon"></span>
+        Quero meu agendamento
+      </a>
+    </div>
+  </section>
+
+  <section class="differentials" id="diferenciais">
+    <div class="title">
+      <h2>Nossos Diferenciais</h2>
+      <p>Uma experiência completa dentro do Blue Tree Towers Rio Poty</p>
+    </div>
+
+    <div class="differentials-grid">
+      <div class="diff-text">
+        <div class="diff-item">
+          <span>
+            <svg viewBox="0 0 24 24">
+              <path d="M4 20c7-2 13-8 16-16"></path>
+              <path d="M8 16c-3-6 2-11 10-12 1 8-4 13-10 12z"></path>
+            </svg>
+          </span>
+          <p>
+            A San Vitale oferece uma experiência única de bem-estar, localizada dentro do sofisticado
+            <strong>Blue Tree Towers Rio Poty</strong>, unindo cuidado, conforto e exclusividade em um só lugar.
+          </p>
+        </div>
+
+        <div class="diff-item">
+          <span>
+            <svg viewBox="0 0 24 24">
+              <path d="M4 10h16"></path>
+              <path d="M6 10v10"></path>
+              <path d="M18 10v10"></path>
+              <path d="M8 6h8"></path>
+              <path d="M10 3h4"></path>
+            </svg>
+          </span>
+          <p>
+            Nossos clientes têm o privilégio de vivenciar não apenas os atendimentos terapêuticos, mas também desfrutar
+            de ambientes abertos e acolhedores do hotel, como o elegante <strong>American Bar</strong> e o encantador
+            restaurante <strong>Le Jardin</strong>.
+          </p>
+        </div>
+
+        <div class="diff-item">
+          <span>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21C7 17 4 13 4 9a8 8 0 0 1 16 0c0 4-3 8-8 12z"></path>
+              <path d="M9 10h6"></path>
+            </svg>
+          </span>
+          <p>
+            Inserida em um espaço arborizado e harmonioso, a San Vitale proporciona um clima naturalmente agradável,
+            que favorece o relaxamento, o equilíbrio emocional e a conexão com o bem-estar.
+          </p>
+        </div>
+
+        <div class="diff-item">
+          <span>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 6.5-7 11-7 11z"></path>
+            </svg>
+          </span>
+          <p>
+            Tudo isso pensado para oferecer a você uma vivência completa, humanizada e memorável.
+          </p>
+        </div>
+      </div>
+
+      <div class="diff-gallery">
+        <img class="diff-main" src="hotel.jpg" alt="Hotel com área externa arborizada">
+        <img src="espaco.jpg" alt="American Bar">
+        <img src="recepcao.jpg" alt="Restaurante Le Jardin">
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre">
+    <img src="sanvitale.jpg" alt="Ambiente San Vitale">
+
+    <div>
+      <h2>Sobre a San Vitale</h2>
+      <p>
+        Aqui, cada detalhe foi cuidadosamente pensado a partir de vivências reais, movimentos sentidos e dores superadas.
+        A San Vitale nasceu para acolher o ser humano como ele realmente é: inteiro, complexo e em constante transformação.
+      </p>
+      <p>
+        Acreditamos que cura é integração. Por isso, nossas terapias foram criadas para tocar corpo, mente e energia.
+      </p>
+      <a href="#agendamento" class="btn">
+        <span class="wpp-icon"></span>
+        Quero meu agendamento
+      </a>
+    </div>
+  </section>
+
+  <section id="experiencias">
+    <div class="title">
+      <h2>Experiências</h2>
+      <p>Terapias corporais, energéticas e cuidados de beleza</p>
+    </div>
+
+    <div class="filter-area">
+      <button onclick="filterServices('all', this)">Todos</button>
+      <button onclick="filterServices('dor', this)">Alívio de dores</button>
+      <button onclick="filterServices('beleza', this)">Beleza</button>
+      <button onclick="filterServices('face', this)">Cuidados com a face</button>
+      <button onclick="filterServices('pes', this)">Cuidados com os pés</button>
+      <button onclick="filterServices('drenagem', this)">Drenagem e Modeladora</button>
+      <button onclick="filterServices('premium', this)">Premium</button>
+      <button onclick="filterServices('atletas', this)">Atletas</button>
+      <button onclick="filterServices('estetica', this)">Medicina Estética</button>
+      <button onclick="filterServices('pos', this)">Pós-Cirúrgico</button>
+      <button onclick="filterServices('relaxamento', this)">Relaxamento</button>
+      <button onclick="filterServices('vibracionais', this)">Terapias Vibracionais</button>
+    </div>
+
+    <div id="msgFiltro" class="msg-filtro">
+     Selecione uma categoria acima para visualizar as experiências
+</div>
+
+    <div class="services-grid">
+
+      <article class="card service relaxante">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80" alt="Massagem Sensorial">
+        <div class="card-body">
+          <h3>Massagem Sensorial – Toque de Seda</h3>
+          <p>Experiência sensorial com toques suaves e contínuos, promovendo relaxamento profundo e conexão corporal.</p>
+        </div>
+        <div class="card-footer"><span>1 hr 20 min</span><span>R$ 385,00</span></div>
+      </article>
+
+      <article class="card service relaxante">
+        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=80" alt="Terapia Tântrica">
+        <div class="card-body">
+          <h3>Terapia Tântrica – Profissional Parceira</h3>
+          <p>Vivência voltada à consciência corporal, relaxamento profundo e equilíbrio energético.</p>
+        </div>
+        <div class="card-footer"><span>1 hr 30 min</span><span>R$ 485,00</span></div>
+      </article>
+
+      <article class="card service dor">
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=80" alt="Liberação Miofascial">
+        <div class="card-body">
+          <h3>Liberação Miofascial – 1 área</h3>
+          <p>Técnica terapêutica que atua nas fáscias, melhora a mobilidade e alivia desconfortos musculares.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ 99,99</span></div>
+      </article>
+
+      <article class="card service dor">
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=80" alt="Liberação Miofascial">
+        <div class="card-body">
+          <h3>Liberação Miofascial – 3 áreas</h3>
+          <p>Técnica terapêutica para liberar restrições, melhorar mobilidade e promover bem-estar integral.</p>
+        </div>
+        <div class="card-footer"><span>1 hr</span><span>R$ 160,00</span></div>
+      </article>
+
+      <article class="card service dor">
+        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80" alt="Massagem Cabeça e Face">
+        <div class="card-body">
+          <h3>Massagem Libera Tensão – Cabeça e Face</h3>
+          <p>Massagem focada no alívio de tensões da cabeça, face, pescoço e região superior.</p>
+        </div>
+        <div class="card-footer"><span>30 min</span><span>R$ 87,00</span></div>
+      </article>
+
+      <article class="card service dor">
+        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80" alt="Shiatsu">
+        <div class="card-body">
+          <h3>Shiatsu – 1 área</h3>
+          <p>Pressões precisas em pontos de energia para equilibrar corpo e mente, liberando tensões profundas.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ 99,99</span></div>
+      </article>
+
+      <article class="card service dor">
+        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80" alt="Shiatsu">
+        <div class="card-body">
+          <h3>Shiatsu – 3 áreas</h3>
+          <p>Massagem eficaz para revitalizar, centrar e trazer harmonia através de pressões energéticas.</p>
+        </div>
+        <div class="card-footer"><span>1 hr</span><span>R$ 130,00</span></div>
+      </article>
+
+      <article class="card service dor">
+        <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=900&q=80" alt="Massagem Terapêutica">
+        <div class="card-body">
+          <h3>Massagem Terapêutica Dores Fortes – 1 área</h3>
+          <p>Terapia para alívio profundo, podendo incluir eletroterapia, ventosas e termoterapia.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ 95,00</span></div>
+      </article>
+
+      <article class="card service dor">
+        <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=900&q=80" alt="Massagem Terapêutica">
+        <div class="card-body">
+          <h3>Massagem Terapêutica Dores Fortes – 3 áreas</h3>
+          <p>Terapia corporal com foco nas regiões de maior desconforto, promovendo relaxamento e recuperação.</p>
+        </div>
+        <div class="card-footer"><span>1 hr</span><span>R$ 205,00</span></div>
+      </article>
+
+      <article class="card service dor">
+        <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=900&q=80" alt="Ventosaterapia">
+        <div class="card-body">
+          <h3>Ventosaterapia – 1 área</h3>
+          <p>Terapia aplicada em pontos estratégicos para estimular circulação, aliviar tensões e desbloquear energias.</p>
+        </div>
+        <div class="card-footer"><span>30 min</span><span>R$ 85,00</span></div>
+      </article>
+
+      <article class="card service beleza">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80" alt="Manicure e Pedicure">
+        <div class="card-body">
+          <h3>Manicure e Pedicure</h3>
+          <p>Cuidado estético completo para mãos e pés, promovendo beleza, higiene e bem-estar.</p>
+        </div>
+        <div class="card-footer"><span>1 hr 20 min</span><span>R$ 85,00</span></div>
+      </article>
+
+      <article class="card service face">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80" alt="Detox Facial">
+        <div class="card-body">
+          <h3>Detox Facial com Calda de Morango</h3>
+          <p>Tratamento para revitalizar a pele, reduzir sinais de fadiga e restaurar luminosidade.</p>
+        </div>
+        <div class="card-footer"><span>1 hr 30 min</span><span>R$ 230,00</span></div>
+      </article>
+
+      <article class="card service face">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=900&q=80" alt="Drenagem Facial">
+        <div class="card-body">
+          <h3>Drenagem Linfática – Face + Colo</h3>
+          <p>Massagem suave e rítmica que reduz inchaços e promove sensação de leveza.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ 85,00</span></div>
+      </article>
+
+      <article class="card service face">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Limpeza de Pele">
+        <div class="card-body">
+          <h3>Limpeza de Pele com Extração</h3>
+          <p>Remove impurezas, células mortas e cravos, promovendo hidratação profunda e revitalização.</p>
+        </div>
+        <div class="card-footer"><span>1 hr 30 min</span><span>R$ 180,00</span></div>
+      </article>
+
+      <article class="card service pes">
+        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=900&q=80" alt="Reflexologia Podal">
+        <div class="card-body">
+          <h3>Reflexologia Podal</h3>
+          <p>Terapia eficaz para alívio de dores e fadiga nos pés e pernas.</p>
+        </div>
+        <div class="card-footer"><span>30 min</span><span>R$ 85,00</span></div>
+      </article>
+
+      <article class="card service pes">
+        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=900&q=80" alt="Reflexologia Podal">
+        <div class="card-body">
+          <h3>Reflexologia Podal + Fisiopower</h3>
+          <p>Pressões estratégicas em pontos reflexos para aliviar dores, fadiga e estimular equilíbrio corporal.</p>
+        </div>
+        <div class="card-footer"><span>50 min</span><span>R$ 95,00</span></div>
+      </article>
+
+      <article class="card service pes">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=900&q=80" alt="Spa dos Pés">
+        <div class="card-body">
+          <h3>Spa dos Pés</h3>
+          <p>Experiência relaxante para cuidado, hidratação e alívio do cansaço dos pés.</p>
+        </div>
+        <div class="card-footer"><span>1 hr</span><span>Consultar</span></div>
+      </article>
+
+      <article class="card service pes">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80" alt="Plástica dos Pés">
+        <div class="card-body">
+          <h3>Plástica dos Pés</h3>
+          <p>Tratamento para retirada de calosidade, deixando os pés mais lisos, leves e bem cuidados.</p>
+        </div>
+        <div class="card-footer"><span>1 hr 20 min</span><span>R$ 65,00</span></div>
+      </article>
+
+      <article class="card service drenagem">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80" alt="Drenagem Sauna Detox">
+        <div class="card-body">
+          <h3>Drenagem + Sauna Detox</h3>
+          <p>Combina drenagem linfática e sauna, promovendo eliminação de toxinas e sensação de leveza.</p>
+        </div>
+        <div class="card-footer"><span>1 hr 20 min</span><span>R$ 185,00</span></div>
+      </article>
+
+      <article class="card service drenagem">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=900&q=80" alt="Drenagem Linfática">
+        <div class="card-body">
+          <h3>Drenagem Linfática – 1 área</h3>
+          <p>Massagem suave e rítmica que estimula a circulação linfática, reduz inchaços e elimina toxinas.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ 95,00</span></div>
+      </article>
+
+      <article class="card service drenagem">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=900&q=80" alt="Drenagem Linfática">
+        <div class="card-body">
+          <h3>Drenagem Linfática – 3 áreas</h3>
+          <p>Estimula a circulação linfática, reduz inchaços e proporciona leveza corporal.</p>
+        </div>
+        <div class="card-footer"><span>1 hr</span><span>R$ 150,00</span></div>
+      </article>
+
+      <article class="card service premium">
+        <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?auto=format&fit=crop&w=900&q=80" alt="A Magia de Afrodite">
+        <div class="card-body">
+          <h3>A Magia de Afrodite</h3>
+          <p>Experiência premium sensorial, pensada para relaxamento, conexão e bem-estar.</p>
+        </div>
+        <div class="card-footer"><span>1 hr 30 min</span><span>R$ 350,00</span></div>
+      </article>
+
+      <article class="card service premium">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80" alt="Deuses do Olimpo">
+        <div class="card-body">
+          <h3>Deuses do Olimpo</h3>
+          <p>Experiência premium de relaxamento e cuidado integral, criada para uma vivência memorável.</p>
+        </div>
+        <div class="card-footer"><span>1 hr 20 min</span><span>R$ 280,00</span></div>
+      </article>
+
+      <article class="card service premium">
+        <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?auto=format&fit=crop&w=900&q=80" alt="Meu Reinado">
+        <div class="card-body">
+          <h3>Meu Reinado – a 4 mãos</h3>
+          <p>Atendimento especial realizado a quatro mãos, proporcionando uma experiência intensa e exclusiva.</p>
+        </div>
+        <div class="card-footer"><span>1 hr 30 min</span><span>R$ 485,00</span></div>
+      </article>
+
+      <article class="card service atletas">
+        <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Massagem Desportiva + Recovery</h3>
+          <p>Sessão focada em recuperação muscular, promovendo alívio de tensões.</p>
+        </div>
+        <div class="card-footer"><span>30 min</span><span>R$ 95,00</span></div>
+      </article>
+
+      <article class="card service atletas">
+        <img src="https://images.unsplash.com/photo-1584467735871-8b0e5d1d5b62?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Massagem Desportiva + Recovery</h3>
+          <p>Recuperação muscular com técnicas específicas para alto desempenho.</p>
+        </div>
+        <div class="card-footer"><span>60 min</span><span>R$ 185,00</span></div>
+      </article>
+
+      <article class="card service estetica">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Banho de Lua & Argiloterapia</h3>
+          <p>Tratamento estético para revitalização e cuidado da pele.</p>
+        </div>
+        <div class="card-footer"><span>1h30</span><span>R$ 95,00</span></div>
+      </article>
+
+      <article class="card service pos">
+        <img src="https://images.unsplash.com/photo-1580281657527-47f249e3f4df?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Drenagem Linfática Pós (1 área)</h3>
+          <p>Reduz inchaço e melhora a circulação.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ 95,00</span></div>
+      </article>
+
+      <article class="card service pos">
+        <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Drenagem Linfática Pós (3 áreas)</h3>
+          <p>Auxilia na recuperação do corpo com mais eficiência.</p>
+        </div>
+        <div class="card-footer"><span>1h20</span><span>R$ 135,00</span></div>
+      </article>
+
+      <article class="card service relaxamento">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Massagem 7 Chakras</h3>
+          <p>Equilíbrio energético com cristais e técnicas relaxantes.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ -</span></div>
+      </article>
+
+      <article class="card service relaxamento">
+        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Cabeça e Facial Relaxante</h3>
+          <p>Relaxamento profundo com foco facial.</p>
+        </div>
+        <div class="card-footer"><span>30 min</span><span>R$ -</span></div>
+      </article>
+
+      <article class="card service relaxamento">
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Massagem do Viajante (1 área)</h3>
+          <p>Alívio do cansaço físico e mental.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ -</span></div>
+      </article>
+
+      <article class="card service relaxamento">
+        <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Massagem do Viajante (3 áreas)</h3>
+          <p>Experiência completa de relaxamento.</p>
+        </div>
+        <div class="card-footer"><span>1h</span><span>R$ -</span></div>
+      </article>
+
+      <article class="card service relaxamento">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Massagem Pôr do Sol</h3>
+          <p>Relaxamento com pedras quentes e óleos.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ -</span></div>
+      </article>
+
+      <article class="card service vibracionais">
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Alinhamento dos Chakras</h3>
+          <p>Harmonização energética com cristais.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ -</span></div>
+      </article>
+
+      <article class="card service vibracionais">
+        <img src="https://images.unsplash.com/photo-1584467735871-8b0e5d1d5b62?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Barra de Access</h3>
+          <p>Liberação de bloqueios mentais.</p>
+        </div>
+        <div class="card-footer"><span>40 min</span><span>R$ -</span></div>
+      </article>
+
+      <article class="card service vibracionais">
+        <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Leitura da Aura</h3>
+          <p>Análise energética completa.</p>
+        </div>
+        <div class="card-footer"><span>1h30</span><span>R$ -</span></div>
+      </article>
+
+      <article class="card service vibracionais">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80">
+        <div class="card-body">
+          <h3>Tratamento Radiestésico</h3>
+          <p>Equilíbrio dos campos energéticos.</p>
+        </div>
+        <div class="card-footer"><span>1h</span><span>R$ -</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="prices" id="precos">
+    <div class="price-header">
+      <h2>Tabela de Investimento</h2>
+
+      <button type="button" id="btnInvestimento" class="toggle-arrow" onclick="abrirInvestimento()">
+        ▼
+      </button>
+    </div>
+
+    <div id="msgTabela" class="msg-filtro">
+    Clique no botão acima para visualizar a tabela de valores
+</div>
+
+    <div id="investimentoBox" class="investimento-box" style="display: none;">
+      <div class="price-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Serviço</th>
+              <th>Duração</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Massagens / Experiências</td><td>Massagem Sensorial – Toque de Seda</td><td>1h20</td><td><strong>R$ 385,00</strong></td></tr>
+            <tr><td>Massagens / Experiências</td><td>Terapia Tântrica – Profissional Parceira</td><td>1h30</td><td><strong>R$ 485,00</strong></td></tr>
+            <tr><td>Alívio de Dores</td><td>Liberação Miofascial – 1 área</td><td>40 min</td><td><strong>R$ 99,99</strong></td></tr>
+            <tr><td>Alívio de Dores</td><td>Liberação Miofascial – 3 áreas</td><td>1h</td><td><strong>R$ 160,00</strong></td></tr>
+            <tr><td>Alívio de Dores</td><td>Massagem Libera Tensão – Cabeça & Face</td><td>30 min</td><td><strong>R$ 87,00</strong></td></tr>
+            <tr><td>Alívio de Dores</td><td>Shiatsu – 1 área</td><td>40 min</td><td><strong>R$ 99,99</strong></td></tr>
+            <tr><td>Alívio de Dores</td><td>Shiatsu – 3 áreas</td><td>1h</td><td><strong>R$ 130,00</strong></td></tr>
+            <tr><td>Alívio de Dores</td><td>Massagem Terapêutica Dores Fortes – 1 área</td><td>40 min</td><td><strong>R$ 95,00</strong></td></tr>
+            <tr><td>Alívio de Dores</td><td>Massagem Terapêutica Dores Fortes – 3 áreas</td><td>1h</td><td><strong>R$ 205,00</strong></td></tr>
+            <tr><td>Alívio de Dores</td><td>Ventosaterapia – 1 área</td><td>30 min</td><td><strong>R$ 85,00</strong></td></tr>
+            <tr><td>Beleza</td><td>Manicure e Pedicure</td><td>1h20</td><td><strong>R$ 85,00</strong></td></tr>
+            <tr><td>Cuidados com a Face</td><td>Detox Facial com Calda de Morango</td><td>1h30</td><td><strong>R$ 230,00</strong></td></tr>
+            <tr><td>Cuidados com a Face</td><td>Drenagem Linfática – Face + Colo</td><td>40 min</td><td><strong>R$ 85,00</strong></td></tr>
+            <tr><td>Cuidados com a Face</td><td>Limpeza de Pele com Extração</td><td>1h30</td><td><strong>R$ 180,00</strong></td></tr>
+            <tr><td>Cuidados com os Pés</td><td>Reflexologia Podal</td><td>30 min</td><td><strong>R$ 85,00</strong></td></tr>
+            <tr><td>Cuidados com os Pés</td><td>Reflexologia Podal + Fisiopower</td><td>50 min</td><td><strong>R$ 95,00</strong></td></tr>
+            <tr><td>Cuidados com os Pés</td><td>Spa dos Pés</td><td>1h</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Cuidados com os Pés</td><td>Plástica dos Pés</td><td>1h20</td><td><strong>R$ 65,00</strong></td></tr>
+            <tr><td>Drenagem e Modeladora</td><td>Drenagem + Sauna Detox</td><td>1h20</td><td><strong>R$ 185,00</strong></td></tr>
+            <tr><td>Drenagem e Modeladora</td><td>Drenagem Linfática – 1 área</td><td>40 min</td><td><strong>R$ 95,00</strong></td></tr>
+            <tr><td>Drenagem e Modeladora</td><td>Drenagem Linfática – 3 áreas</td><td>1h</td><td><strong>R$ 150,00</strong></td></tr>
+            <tr><td>Experiência Premium</td><td>A Magia de Afrodite</td><td>1h30</td><td><strong>R$ 350,00</strong></td></tr>
+            <tr><td>Experiência Premium</td><td>Deuses do Olimpo</td><td>1h20</td><td><strong>R$ 280,00</strong></td></tr>
+            <tr><td>Experiência Premium</td><td>Meu Reinado – a 4 mãos</td><td>1h30</td><td><strong>R$ 485,00</strong></td></tr>
+            <tr><td>Massagem para Atletas</td><td>Massagem Desportiva + Recovery</td><td>30 min</td><td><strong>R$ 95,00</strong></td></tr>
+            <tr><td>Massagem para Atletas</td><td>Massagem Desportiva + Recovery</td><td>60 min</td><td><strong>R$ 185,00</strong></td></tr>
+            <tr><td>Medicina Estética</td><td>Banho de Lua & Argiloterapia</td><td>1h30</td><td><strong>R$ 95,00</strong></td></tr>
+            <tr><td>Pós-Cirúrgico</td><td>Drenagem Linfática Pós – 1 área</td><td>40 min</td><td><strong>R$ 95,00</strong></td></tr>
+            <tr><td>Pós-Cirúrgico</td><td>Drenagem Linfática Pós – 3 áreas</td><td>1h20</td><td><strong>R$ 135,00</strong></td></tr>
+            <tr><td>Relaxamento</td><td>Massagem 7 Chakras – Relaxa e Energiza Áreas</td><td>40 min</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Relaxamento</td><td>Massagem Cabeça & Facial Relaxante</td><td>30 min</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Relaxamento</td><td>Massagem do Viajante – 1 área</td><td>40 min</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Relaxamento</td><td>Massagem do Viajante – 3 áreas</td><td>1h</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Relaxamento</td><td>Massagem Pôr do Sol – 1 área</td><td>40 min</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Relaxamento</td><td>Massagem Pôr do Sol – 3 áreas</td><td>1h</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Relaxamento</td><td>Massagem Relaxante – Ritmo Leve e Delicado</td><td>40 min</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Terapias Vibracionais</td><td>Alinhamento dos Chakras com Pêndulo</td><td>40 min</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Terapias Vibracionais</td><td>Barra de Access</td><td>40 min</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Terapias Vibracionais</td><td>Leitura Energética da Aura</td><td>1h30</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Terapias Vibracionais</td><td>Mapa Bioenergético</td><td>1h30</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Terapias Vibracionais</td><td>Regressão</td><td>1h</td><td><strong>Consultar</strong></td></tr>
+            <tr><td>Terapias Vibracionais</td><td>Tratamento Radiestésico</td><td>1h</td><td><strong>Consultar</strong></td></tr>
+          </tbody>  
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="agendamento" id="agendamento">
+    <div class="title">
+      <h2>Agende sua Sessão</h2>
+      <p>Escolha o serviço, data e horário de preferência</p>
+    </div>
+
+    <form class="booking-box" onsubmit="agendarWhatsApp(event)">
+      <div>
+        <label>Serviço</label>
+        <select id="servico" required>
+          <option value="">Selecione o serviço</option>
+          <option>Massagem Sensorial – Toque de Seda</option>
+          <option>Terapia Tântrica – Profissional Parceira</option>
+          <option>Liberação Miofascial – 1 área</option>
+          <option>Liberação Miofascial – 3 áreas</option>
+          <option>Massagem Libera Tensão – Cabeça e Face</option>
+          <option>Shiatsu – 1 área</option>
+          <option>Shiatsu – 3 áreas</option>
+          <option>Massagem Terapêutica Dores Fortes – 1 área</option>
+          <option>Massagem Terapêutica Dores Fortes – 3 áreas</option>
+          <option>Ventosaterapia – 1 área</option>
+          <option>Manicure e Pedicure</option>
+          <option>Detox Facial com Calda de Morango</option>
+          <option>Drenagem Linfática – Face + Colo</option>
+          <option>Limpeza de Pele com Extração</option>
+          <option>Reflexologia Podal</option>
+          <option>Reflexologia Podal + Fisiopower</option>
+          <option>Spa dos Pés</option>
+          <option>Plástica dos Pés</option>
+          <option>Drenagem + Sauna Detox</option>
+          <option>Drenagem Linfática – 1 área</option>
+          <option>Drenagem Linfática – 3 áreas</option>
+          <option>A Magia de Afrodite</option>
+          <option>Deuses do Olimpo</option>
+          <option>Meu Reinado – a 4 mãos</option>
+          <option>Massagem Desportiva + Recovery</option>
+          <option>Banho de Lua & Argiloterapia</option>
+          <option>Drenagem Linfática Pós</option>
+          <option>Massagem 7 Chakras</option>
+          <option>Barra de Access</option>
+          <option>Tratamento Radiestésico</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Nome</label>
+        <input id="nome" type="text" placeholder="Seu nome" required>
+      </div>
+
+      <div>
+        <label>Seu Aniversário</label>
+        <input id="aniversario" type="date" required>
+      </div>
+
+      <div>
+        <label>Data</label>
+        <input id="data" type="date" required>
+      </div>
+
+      <div>
+        <label>Horário</label>
+        <select id="horario" required>
+          <option value="">Selecione</option>
+          <option>9 horas</option>
+          <option>10 horas</option>
+          <option>11 horas</option>
+          <option>12 horas</option>
+          <option>14 horas</option>
+          <option>15 horas</option>
+          <option>16 horas</option>
+          <option>17 horas</option>
+          <option>18 horas</option>
+          <option>19 horas</option>
+          <option>20 horas</option>
+        </select>
+      </div>
+
+      <button class="btn" type="submit">
+        <span class="wpp-icon"></span>
+        Agendar
+      </button>
+    </form>
+
+    <div class="info-agendamento">
+      <strong>Informações importantes:</strong>
+      <p>
+        Segunda a sexta: 9h às 12h e 14h às 20h.<br>
+        Sábado: 9h às 12h e 14h às 17h.<br>
+        Domingo: Consulte disponibilidade.
+      </p>
+    </div>
+
+    <div class="booking-extra">
+      <a href="https://online.maapp.com.br/smviysle" target="_blank" class="btn">
+        <span class="wpp-icon"></span>
+        Ver agenda oficial
+      </a>
+    </div>
+  </section>
+
+  <section class="empresas" id="empresas">
+    <div class="title">
+      <h2>Atendimento para Empresas</h2>
+      <p>Programas de bem-estar, relaxamento e cuidado corporativo para equipes</p>
+    </div>
+
+    <form class="empresa-box" onsubmit="enviarEmpresaWhatsApp(event)">
+      <div>
+        <label>Nome da Empresa</label>
+        <input id="empresaNome" type="text" placeholder="Ex: Clínica, loja, escritório..." required>
+      </div>
+
+      <div>
+        <label>Serviço de Interesse</label>
+        <select id="empresaServico" required>
+          <option value="">Selecione</option>
+          <option>Massagem laboral para equipe</option>
+          <option>Dia de bem-estar corporativo</option>
+          <option>Parceria para colaboradores</option>
+          <option>Evento empresarial</option>
+          <option>Pacote personalizado</option>
+        </select>
+      </div>
+
+      <div class="empresa-full">
+        <label>Descrição</label>
+        <textarea id="empresaDescricao" placeholder="Conte um pouco sobre o que a empresa precisa, quantidade de pessoas, data desejada ou objetivo da ação..." required></textarea>
+      </div>
+
+      <button class="btn" type="submit">
+        <span class="wpp-icon"></span>
+        Solicitar proposta
+      </button>
+    </form>
+  </section>
+
+  <section class="cursos" id="cursos">
+    <div class="title">
+      <h2>Cursos San Vitale</h2>
+      <p>Formações para quem deseja aprender técnicas de massagem e terapias integrativas</p>
+    </div>
+
+    <div class="curso-botao-box">
+      <a 
+        href="https://wa.me/5586998055995?text=Olá! Gostaria de solicitar o catálogo de cursos." 
+        target="_blank" 
+        class="btn curso-btn"
+      >
+        Solicite o catálogo de cursos aqui
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<a href="https://wa.me/5586998055995" class="whatsapp" target="_blank" aria-label="WhatsApp San Vitale">
+  <span class="wpp-icon"></span>
+</a>
+
+<footer id="contato">
+  <div class="footer-grid">
+    <div>
+      <h3>San Vitale</h3>
+      <p>Wellness Studio. Cuidado, equilíbrio e bem-estar para corpo, mente e energia.</p>
+      <a href="https://www.instagram.com/sanvitale_wellness?igsh=enVjbDYyOXo1dHJv&utm_source=qr" target="_blank">
+        Instagram: @sanvitale_wellness
+      </a>
+    </div>
+
+    <div>
+      <h4>Serviços</h4>
+      <a href="#experiencias">Terapias para dor</a>
+      <a href="#experiencias">Medicina estética</a>
+      <a href="#experiencias">Terapias Energéticas</a>
+      <a href="#experiencias">Cuidados de Beleza</a>
+      <a href="#experiencias">Alacarte de SPA</a>
+    </div>
+
+    <div>
+      <h4>Contato</h4>
+      <p class="contact-line">
+        <span class="wpp-mini"></span>
+        <a href="https://wa.me/5586998055995" target="_blank">(86) 99805-5995</a>
+      </p>
+
+      <p class="contact-line">
+        <span class="mail-icon"></span>
+        <a href="mailto:sanvitaleempresarial@gmail.com">sanvitaleempresarial@gmail.com</a>
+      </p>
+
+      <p class="contact-line">
+        <span class="pin-icon"></span>
+        <a 
+          href="https://www.google.com/maps/dir/?api=1&destination=Av.+Marechal+Castelo+Branco,+555,+Ilhotas,+Teresina,+PI,+64014-058" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="map-link"
+        >
+          Av. Marechal Castelo Branco, Nº 555<br>
+          Bairro Ilhotas - Teresina-PI<br>
+          Dentro do Hotel Blue Tree
+        </a>
+      </p>
+    </div>
+
+    <div>
+      <h4>Horário de Atendimento</h4>
+      <p>Segunda a Sexta: 9h às 12h e 14h às 20h</p>
+      <p>Sábado: 9h às 12h e 14h às 17h</p>
+      <p>Domingo: Consulte disponibilidade</p>
+    </div>
+  </div>
+
+  <div class="copy">
+    <span>© 2024 San Vitale - Wellness Studio - Todos os direitos reservados</span>
+    <span>Desenvolvido para seu bem-estar</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
