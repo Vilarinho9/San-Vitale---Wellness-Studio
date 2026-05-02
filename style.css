@@ -33,7 +33,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
-  box-shadow: 0 2px 16px rgba(0,0,0,.07);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, .07);
 }
 
 .logo {
@@ -48,6 +48,7 @@ header {
   object-fit: contain;
   display: block;
 }
+
 .logo-mark {
   width: 58px;
   height: 58px;
@@ -136,7 +137,7 @@ nav a:hover::after {
   justify-content: center;
   gap: 10px;
   transition: .3s;
-  box-shadow: 0 10px 25px rgba(78,107,91,.22);
+  box-shadow: 0 10px 25px rgba(78, 107, 91, .22);
 }
 
 .btn:hover {
@@ -180,7 +181,7 @@ nav a:hover::after {
 .hero {
   min-height: 690px;
   background:
-    linear-gradient(90deg, rgba(36,58,45,.88), rgba(78,107,91,.62), rgba(255,255,255,.08)),
+    linear-gradient(90deg, rgba(36, 58, 45, .88), rgba(78, 107, 91, .62), rgba(255, 255, 255, .08)),
     url("https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1800&q=80");
   background-size: cover;
   background-position: center;
@@ -236,7 +237,7 @@ nav a:hover::after {
 .tag i {
   width: 54px;
   height: 54px;
-  background: rgba(244,247,245,.95);
+  background: rgba(244, 247, 245, .95);
   color: var(--green-dark);
   display: grid;
   place-items: center;
@@ -326,7 +327,7 @@ section {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  box-shadow: 0 8px 25px rgba(78,107,91,.12);
+  box-shadow: 0 8px 25px rgba(78, 107, 91, .12);
 }
 
 .diff-item svg {
@@ -394,7 +395,8 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  overflow: hidden; /* IMPORTANTE */
+  overflow: hidden;
+  /* IMPORTANTE */
 }
 
 .card {
@@ -583,7 +585,7 @@ input {
   display: grid;
   place-items: center;
   text-decoration: none;
-  box-shadow: 0 10px 30px rgba(0,0,0,.28);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .28);
   z-index: 60;
 }
 
@@ -603,7 +605,7 @@ footer {
   grid-template-columns: 1.4fr 1fr 1.35fr 1.3fr;
   gap: 35px;
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(255,255,255,.16);
+  border-bottom: 1px solid rgba(255, 255, 255, .16);
 }
 
 footer h3 {
@@ -618,7 +620,7 @@ footer h4 {
 
 footer p,
 footer a {
-  color: rgba(255,255,255,.84);
+  color: rgba(255, 255, 255, .84);
   text-decoration: none;
   font-size: 15px;
   line-height: 1.8;
@@ -636,7 +638,7 @@ footer a {
   justify-content: space-between;
   font-size: 13px;
   padding-top: 20px;
-  color: rgba(255,255,255,.75);
+  color: rgba(255, 255, 255, .75);
   gap: 16px;
 }
 
@@ -660,7 +662,7 @@ footer a {
     background: #fff;
     padding: 24px;
     flex-direction: column;
-    box-shadow: 0 8px 18px rgba(0,0,0,.12);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .12);
   }
 
   nav.show {
@@ -804,11 +806,13 @@ footer a {
     height: 62px;
   }
 }
+
 .hero .btn,
 .booking-extra .btn,
 .about .btn {
   display: none !important;
 }
+
 .price-header {
   display: flex;
   align-items: center;
@@ -837,18 +841,22 @@ footer a {
 .toggle-arrow.rotate {
   transform: rotate(180deg);
 }
+
 .price-table.hidden {
   display: none;
 }
+
 .logo-mark {
   width: 55px;
   height: 55px;
 }
+
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .logo svg,
 .logo svg path,
 .logo svg text,
@@ -869,6 +877,7 @@ footer a {
   width: 58px !important;
   height: 58px !important;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -887,11 +896,14 @@ footer a {
     height: 42px;
   }
 }
+
 .hero-tags {
   display: flex;
-  flex-direction: column; /* deixa em lista */
+  flex-direction: column;
+  /* deixa em lista */
   gap: 15px;
-  align-items: flex-start; /* alinha à esquerda */
+  align-items: flex-start;
+  /* alinha à esquerda */
 }
 
 .tag {
@@ -899,6 +911,7 @@ footer a {
   align-items: center;
   gap: 12px;
 }
+
 .hero h3 {
   white-space: nowrap;
   font-size: clamp(18px, 2.5vw, 24px);
@@ -906,9 +919,11 @@ footer a {
 
 @media (max-width: 768px) {
   .hero h3 {
-    white-space: normal; /* volta a quebrar no mobile */
+    white-space: normal;
+    /* volta a quebrar no mobile */
   }
 }
+
 .info-agendamento {
   background: #F4F7F5;
   border-left: 5px solid #6F8F7B;
@@ -925,6 +940,7 @@ footer a {
   margin-bottom: 6px;
   font-weight: 700;
 }
+
 .booking-box {
   grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr auto !important;
 }
@@ -969,6 +985,7 @@ footer a {
     grid-template-columns: 1fr !important;
   }
 }
+
 .empresas,
 .cursos {
   background: #F4F7F5;
@@ -1009,6 +1026,7 @@ footer a {
 }
 
 @media(max-width: 1080px) {
+
   .empresa-box,
   .courses-grid {
     grid-template-columns: 1fr;
@@ -1018,6 +1036,7 @@ footer a {
     grid-column: auto;
   }
 }
+
 .footer-grid a {
   display: block;
   margin-bottom: 6px;
@@ -1040,6 +1059,7 @@ footer a {
 .toggle-arrow:hover {
   background: #4E6B5B !important;
 }
+
 .price-table {
   max-height: 2000px;
   opacity: 1;
@@ -1052,13 +1072,14 @@ footer a {
 .price-wrapper {
   display: none;
 }
+
 /* ===== VISUAL MODERNO DA TABELA ===== */
 .price-table {
   background: #ffffff;
   border-radius: 14px;
   padding: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Cabeçalho */
@@ -1115,9 +1136,11 @@ footer a {
 .toggle-arrow.open {
   transform: rotate(180deg);
 }
+
 .price-wrapper {
   display: none;
 }
+
 #tabelaPrecos {
   display: block !important;
   max-height: none !important;
@@ -1130,6 +1153,7 @@ footer a {
 #tabelaPrecos.is-hidden {
   display: none !important;
 }
+
 .investimento-box {
   width: 100%;
   margin-top: 25px;
@@ -1141,6 +1165,7 @@ footer a {
   box-shadow: 0 12px 35px rgba(55, 79, 66, .14);
   overflow-x: auto;
 }
+
 .investimento-box {
   width: 100%;
   margin-top: 25px;
@@ -1161,8 +1186,9 @@ footer a {
   box-shadow: 0 12px 35px rgba(55, 79, 66, .14);
   overflow-x: auto;
 }
+
 .map-link {
-  color: rgba(255,255,255,.84);
+  color: rgba(255, 255, 255, .84);
   text-decoration: none;
   transition: .3s ease;
 }
@@ -1171,6 +1197,7 @@ footer a {
   color: #A8BFB0;
   text-decoration: underline;
 }
+
 .curso-botao-box {
   display: flex;
   justify-content: center;
@@ -1181,12 +1208,14 @@ footer a {
   font-size: 16px;
   padding: 16px 28px;
 }
+
 .about-images img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 16px;
 }
+
 .price-header {
   display: flex !important;
   align-items: center !important;
@@ -1220,6 +1249,7 @@ footer a {
   font-size: 17px !important;
   cursor: pointer !important;
 }
+
 .btn-agendar {
   background: #5f7f6e;
   color: white !important;
@@ -1236,27 +1266,34 @@ footer a {
 .btn-agendar:hover {
   background: #4e6b5b;
 }
+
 .service-card {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
   border-radius: 12px;
 }
+
 * {
   box-sizing: border-box;
 }
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
-  justify-content: center; /* CENTRALIZA quando tiver poucos */
+  justify-content: center;
+  /* CENTRALIZA quando tiver poucos */
   gap: 24px;
 }
+
 section {
   scroll-margin-top: 110px;
 }
-.service{
+
+.service {
   display: none;
 }
+
 .msg-filtro {
   text-align: center;
   margin: 30px 0;
@@ -1274,54 +1311,194 @@ section {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .service {
   display: none;
+}
+
+@media (max-width: 620px) {
+
+  header {
+    height: 76px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  /* LOGO */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 160px;
+  }
+
+  .logo-img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  .logo-text h1 {
+    font-size: 18px !important;
+    margin: 0;
+  }
+
+  .logo-text span {
+    font-size: 9px !important;
+    letter-spacing: 2px;
+    margin-top: 2px;
+  }
+
+  /* BOTÃO AGENDAR (AGORA MENOR, NÃO SOME) */
+  .btn-agendar {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+    border-radius: 10px !important;
+    gap: 5px;
+    white-space: nowrap;
+  }
+
+  /* MENU HAMBURGER */
+  .menu {
+    display: flex !important;
+    font-size: 26px;
+    margin-left: 5px;
+  }
+
+  /* NAV MOBILE */
+  #nav {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    z-index: 999;
+  }
+
+  #nav.show {
+    display: flex;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+}
+
+
+ 
+@media (max-width: 620px) {
+  header .btn-agendar {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    width: auto !important;
+    max-width: 120px !important;
+    padding: 6px 8px !important;
+    font-size: 10px !important;
+    line-height: 1.1 !important;
+
+    border-radius: 10px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  header .btn-agendar .wpp-icon {
+    width: 14px !important;
+    height: 14px !important;
+    min-width: 14px !important;
+  }
 }
 @media (max-width: 620px) {
   header {
     height: 76px;
-    padding: 0 14px;
-    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
   }
 
   .logo {
-    max-width: 170px;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 165px;
   }
 
   .logo-img {
-    width: 46px !important;
-    height: 46px !important;
+    width: 40px !important;
+    height: 40px !important;
     object-fit: contain;
   }
 
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
   .logo-text h1 {
-    font-size: 28px !important;
-    line-height: 0.9;
+    font-size: 18px !important;
+    margin: 0;
+    line-height: 1;
   }
 
   .logo-text span {
-    font-size: 10px !important;
-    letter-spacing: 3px;
+    font-size: 8px !important;
+    letter-spacing: 2px;
+    margin-top: 2px;
   }
 
-  .btn-agendar {
-    display: none !important;
+  header .btn-agendar {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 110px !important;
+    padding: 6px 8px !important;
+    font-size: 10px !important;
+    line-height: 1.1 !important;
+    border-radius: 10px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  header .btn-agendar .wpp-icon {
+    width: 14px !important;
+    height: 14px !important;
+    min-width: 14px !important;
   }
 
   .menu {
     display: flex !important;
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     align-items: center;
     justify-content: center;
     font-size: 28px;
-    margin-left: auto;
+    margin-left: 0;
   }
 
   #nav {
@@ -1335,6 +1512,7 @@ section {
     padding: 20px;
     display: none;
     box-shadow: 0 20px 35px rgba(0,0,0,.08);
+    z-index: 999;
   }
 
   #nav.show {
@@ -1344,4 +1522,20 @@ section {
   .hero {
     padding-top: 100px;
   }
+}
+#investimentoBox {
+  display: none;
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+.aviso-tabela {
+  margin-top: 15px;
+  padding: 14px 16px;
+  background: #f4f7f5;
+  border-left: 4px solid #6F8F7B;
+  border-radius: 8px;
+  color: #4E6B5B;
+  font-size: 14px;
+  line-height: 1.6;
 }
