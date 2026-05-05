@@ -1064,7 +1064,7 @@ footer a {
   max-height: 2000px;
   opacity: 1;
   transform: translateY(0);
-  overflow: hidden;
+  overflow: visible;
   transition: max-height 0.7s ease, opacity 0.4s ease, transform 0.4s ease;
 }
 
@@ -1559,4 +1559,101 @@ body {
 
 .hero {
   margin-top: 0 !important;
+}
+.price-table {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.table-scroll {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.aviso-tabela {
+  background: #f3f8f5;
+  border-left: 4px solid #5f8b72;
+  padding: 14px 18px;
+  color: #315142;
+  font-size: 14px;
+  position: relative;
+  z-index: 10;
+}
+.price-table {
+  background: #fff;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 12px 35px rgba(55, 79, 66, .14);
+  overflow: hidden;
+}
+
+.table-scroll {
+  max-height: 430px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+.table-scroll table {
+  width: 100%;
+  min-width: 780px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.table-scroll thead th {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #4E6B5B;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.table-scroll thead th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.table-scroll thead th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+.table-scroll tbody td {
+  padding: 14px 15px;
+  border-bottom: 1px solid #e8eee9;
+  color: #59665d;
+  font-size: 14px;
+  background: #fff;
+}
+
+.table-scroll tbody tr:nth-child(even) td {
+  background: #f8faf9;
+}
+
+.table-scroll tbody tr:hover td {
+  background: #f2f7f4;
+}
+
+.table-scroll td strong {
+  color: #4E6B5B;
+  font-weight: 800;
+}
+
+.aviso-tabela {
+  margin-top: 10px;
+  padding: 14px 16px;
+  background: #f4f7f5;
+  border-left: 4px solid #6F8F7B;
+  border-radius: 8px;
+  color: #4E6B5B;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.aviso-tabela strong {
+  color: #315142;
 }
