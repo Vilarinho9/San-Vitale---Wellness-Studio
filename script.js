@@ -8,16 +8,37 @@ function filterServices(category, button) {
   const buttons = document.querySelectorAll(".filter-area button");
   const msg = document.getElementById("msgFiltro");
 
+  // 🔥 VERIFICA SE JÁ ESTÁ ATIVO
+  const jaAtivo = button.classList.contains("active");
+
+  // REMOVE active de todos
+  buttons.forEach(btn => btn.classList.remove("active"));
+
+  // SE CLICOU NO MESMO BOTÃO → ESCONDE TUDO
+  if (jaAtivo) {
+    services.forEach(service => {
+      service.style.display = "none";
+    });
+
+    if (msg) msg.style.display = "block";
+    return;
+  }
+
+  // ATIVA O BOTÃO
+  button.classList.add("active");
+
+  // ESCONDE MENSAGEM
   if (msg) msg.style.display = "none";
 
-  buttons.forEach(btn => btn.classList.remove("active"));
-  if (button) button.classList.add("active");
-
+  // FILTRA
   services.forEach(service => {
-    const mostrar = category === "all" || service.classList.contains(category);
-    service.style.display = mostrar ? "flex" : "none";
+    if (category === "all" || service.classList.contains(category)) {
+      service.style.display = "flex";
+    } else {
+      service.style.display = "none";
+    }
   });
-}
+} 
 
 function abrirInvestimento() {
   const tabela = document.getElementById("investimentoBox");
@@ -26,7 +47,9 @@ function abrirInvestimento() {
 
   if (!tabela || !botao) return;
 
-  if (tabela.style.display === "none" || tabela.style.display === "") {
+  const fechada = tabela.style.display === "none" || tabela.style.display === "";
+
+  if (fechada) {
     tabela.style.display = "block";
     botao.textContent = "▲";
     if (msg) msg.style.display = "none";
@@ -36,6 +59,7 @@ function abrirInvestimento() {
     if (msg) msg.style.display = "block";
   }
 }
+
 function agendarWhatsApp(event) {
   event.preventDefault();
 
