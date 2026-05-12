@@ -181,15 +181,19 @@ nav a:hover::after {
 .hero {
   min-height: 690px;
   background:
-    linear-gradient(90deg, rgba(36, 58, 45, .88), rgba(78, 107, 91, .62), rgba(255, 255, 255, .08)),
+    linear-gradient(90deg,
+      rgba(0, 0, 0, .45),
+      rgba(0, 0, 0, .15),
+      rgba(0, 0, 0, .05)
+    ),
     url("capa.jpg");
+
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   padding: 90px 8%;
 }
-
 .hero-content {
   max-width: 720px;
   color: #fff;
@@ -509,17 +513,6 @@ td strong {
   color: var(--green-dark);
 }
 
-.booking-box {
-  background: #fff;
-  box-shadow: var(--shadow);
-  padding: 18px;
-  border-radius: 14px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr) auto;
-  gap: 18px;
-  align-items: end;
-}
-
 label {
   font-size: 13px;
   color: #7a827a;
@@ -691,10 +684,6 @@ footer a {
     grid-template-columns: 1fr;
   }
 
-  .booking-box {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -761,9 +750,6 @@ footer a {
 
   .services-grid,
   .footer-grid,
-  .booking-box {
-    grid-template-columns: 1fr;
-  }
 
   .card {
     min-height: auto;
@@ -939,51 +925,6 @@ footer a {
   display: block;
   margin-bottom: 6px;
   font-weight: 700;
-}
-
-.booking-box {
-  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr auto !important;
-}
-
-.booking-box input,
-.booking-box select {
-  height: 52px !important;
-  border-radius: 12px !important;
-  border: 1px solid #dce7df !important;
-  background: #fff !important;
-  color: #4E6B5B !important;
-  font-weight: 500 !important;
-  outline: none !important;
-  transition: .25s ease !important;
-}
-
-.booking-box input:focus,
-.booking-box select:focus {
-  border-color: #6F8F7B !important;
-  box-shadow: 0 0 0 4px rgba(111, 143, 123, .18) !important;
-}
-
-.booking-box input[type="date"] {
-  cursor: pointer !important;
-  color-scheme: light !important;
-}
-
-.booking-box label {
-  color: #4E6B5B !important;
-  font-weight: 800 !important;
-  margin-bottom: 8px !important;
-}
-
-@media (max-width: 1080px) {
-  .booking-box {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-@media (max-width: 620px) {
-  .booking-box {
-    grid-template-columns: 1fr !important;
-  }
 }
 
 .empresas,
@@ -2315,4 +2256,399 @@ body.dark-mode .diff-item svg {
 
 #investimentoBox td strong {
   color: #4E6B5B !important;
+}
+/* ===== SEÇÕES LARGAS PADRÃO ===== */
+
+.booking,
+.empresas,
+.prices {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  padding: 90px 8% !important;
+  background: #F4F7F5 !important;
+}
+
+/* ===== AGENDAMENTO MAIS AMPLO ===== */
+
+.booking .title,
+.empresas .title,
+.prices .price-header {
+  max-width: 1200px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* aviso do agendamento */
+.info-agendamento {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: 24px auto 0 !important;
+}
+
+/* ===== EMPRESAS MAIS AMPLA ===== */
+
+.empresa-box {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 28px !important;
+}
+
+/* ===== TABELA PADRÃO ===== */
+
+#msgTabela,
+#investimentoBox {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 700px) {
+  .booking,
+  .empresas,
+  .prices {
+    padding: 70px 6% !important;
+  }
+
+  .booking-box,
+  .empresa-box {
+    padding: 20px !important;
+  }
+}
+/* ===== AGENDAMENTO PREMIUM ===== */
+
+.booking {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: #F4F7F5;
+  padding: 90px 8%;
+}
+
+.booking-box {
+  width: 100%;
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  background: #fff;
+
+  border-radius: 26px;
+
+  padding: 34px;
+
+  box-shadow: 0 18px 45px rgba(55, 79, 66, .10);
+
+  display: grid;
+
+  grid-template-columns:
+    1.2fr
+    1fr
+    1fr
+    1fr
+    1fr
+    auto;
+
+  gap: 22px;
+
+  align-items: end;
+}
+
+/* CAMPOS */
+
+.booking-box .field {
+  width: 100%;
+}
+
+.booking-box label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  color: #4E6B5B;
+}
+
+.booking-box input,
+.booking-box select {
+  width: 100%;
+
+  height: 60px;
+
+  padding: 0 18px;
+
+  border-radius: 16px;
+
+  border: 1px solid #d7e2db;
+
+  background: #f8fbf9;
+
+  font-size: 15px;
+
+  color: #315142;
+}
+
+/* BOTÃO */
+
+.booking-box button {
+  min-width: 210px;
+
+  height: 60px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: #6F8F7B;
+
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: .25s ease;
+}
+
+.booking-box button:hover {
+  background: #4E6B5B;
+  transform: translateY(-2px);
+}
+
+/* INFO */
+
+.info-agendamento {
+  width: 100%;
+  max-width: 1450px;
+
+  margin: 24px auto 0;
+
+  padding: 26px;
+
+  border-radius: 18px;
+
+  background: #eef4f0;
+
+  border-left: 5px solid #6F8F7B;
+}
+
+/* TABLET */
+
+@media (max-width: 1200px) {
+
+  .booking-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .booking {
+    padding: 70px 6%;
+  }
+
+  .booking-box {
+    grid-template-columns: 1fr;
+
+    padding: 22px;
+  }
+
+  .booking-box button {
+    width: 100%;
+  }
+
+}
+/* ===== AGENDAMENTO CORRIGIDO COMPLETO ===== */
+
+.agendamento {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  padding: 90px 8% !important;
+  background: #F4F7F5 !important;
+}
+
+.agendamento .title {
+  max-width: 1450px !important;
+  margin: 0 auto 40px !important;
+  text-align: center !important;
+}
+
+.agendamento .title h2 {
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(38px, 4vw, 58px) !important;
+  color: #4E6B5B !important;
+}
+
+.agendamento .title p {
+  color: #6f7e74 !important;
+  font-size: 17px !important;
+  margin-top: 10px !important;
+}
+
+.agendamento .booking-box {
+  width: 100% !important;
+  max-width: 1450px !important;
+  margin: 0 auto !important;
+  padding: 34px !important;
+  background: #ffffff !important;
+  border-radius: 26px !important;
+  box-shadow: 0 22px 55px rgba(55, 79, 66, .14) !important;
+
+  display: grid !important;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr 220px !important;
+  gap: 22px !important;
+  align-items: end !important;
+}
+
+.agendamento .booking-box > div {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.agendamento .booking-box label {
+  display: block !important;
+  margin-bottom: 10px !important;
+  color: #4E6B5B !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+}
+
+.agendamento .booking-box input,
+.agendamento .booking-box select {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 62px !important;
+  padding: 0 18px !important;
+  border-radius: 16px !important;
+  border: 1px solid #d7e2db !important;
+  background: #f8fbf9 !important;
+  color: #315142 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  outline: none !important;
+}
+
+.agendamento .booking-box input:focus,
+.agendamento .booking-box select:focus {
+  background: #ffffff !important;
+  border-color: #6F8F7B !important;
+  box-shadow: 0 0 0 4px rgba(111, 143, 123, .16) !important;
+}
+
+.agendamento .booking-box button {
+  width: 100% !important;
+  height: 62px !important;
+  padding: 0 24px !important;
+  border-radius: 16px !important;
+  background: #6F8F7B !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  cursor: pointer !important;
+  box-shadow: 0 14px 34px rgba(78, 107, 91, .24) !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+}
+
+.agendamento .booking-box button:hover {
+  background: #4E6B5B !important;
+  transform: translateY(-2px) !important;
+}
+
+.agendamento .info-agendamento {
+  width: 100% !important;
+  max-width: 1450px !important;
+  margin: 28px auto 0 !important;
+  padding: 28px 34px !important;
+  border-radius: 22px !important;
+  background: #eef4f0 !important;
+  border-left: 6px solid #6F8F7B !important;
+  color: #315142 !important;
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+}
+
+.agendamento .info-agendamento strong {
+  color: #315142 !important;
+  font-size: 16px !important;
+  margin-bottom: 8px !important;
+}
+
+/* DARK MODE */
+
+body.dark-mode .agendamento {
+  background: #111715 !important;
+}
+
+body.dark-mode .agendamento .booking-box,
+body.dark-mode .agendamento .info-agendamento {
+  background: #18221d !important;
+  color: #dfece5 !important;
+  box-shadow: 0 18px 40px rgba(0,0,0,.35) !important;
+}
+
+body.dark-mode .agendamento input,
+body.dark-mode .agendamento select {
+  background: #111a16 !important;
+  color: #ffffff !important;
+  border-color: rgba(168, 191, 176, .25) !important;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1200px) {
+  .agendamento .booking-box {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .agendamento {
+    padding: 70px 6% !important;
+  }
+
+  .agendamento .booking-box {
+    grid-template-columns: 1fr !important;
+    padding: 24px !important;
+  }
+
+  .agendamento .booking-box button {
+    width: 100% !important;
+  }
+}
+/* ===== TEXOS BRANCOS NO DARK MODE ===== */
+
+body.dark-mode .agendamento .title h2,
+body.dark-mode .agendamento .title p,
+body.dark-mode .agendamento label,
+body.dark-mode .info-agendamento,
+body.dark-mode .info-agendamento strong {
+  color: #ffffff !important;
+}
+
+/* INPUTS */
+
+body.dark-mode .agendamento input,
+body.dark-mode .agendamento select {
+  color: #ffffff !important;
+}
+
+/* PLACEHOLDER */
+
+body.dark-mode .agendamento input::placeholder,
+body.dark-mode .agendamento textarea::placeholder {
+  color: rgba(255,255,255,.55) !important;
 }
