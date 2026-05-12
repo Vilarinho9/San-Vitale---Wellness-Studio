@@ -182,7 +182,7 @@ nav a:hover::after {
   min-height: 690px;
   background:
     linear-gradient(90deg, rgba(36, 58, 45, .88), rgba(78, 107, 91, .62), rgba(255, 255, 255, .08)),
-    url("https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1800&q=80");
+    url("capa.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1159,32 +1159,13 @@ footer a {
   margin-top: 25px;
 }
 
-.investimento-box .price-table {
+.investimento-box .table-scroll {
+  max-height: 430px;
+  overflow-y: auto;
+  overflow-x: auto;
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 12px 35px rgba(55, 79, 66, .14);
-  overflow-x: auto;
-}
-
-.investimento-box {
-  width: 100%;
-  margin-top: 25px;
-
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.investimento-box.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.investimento-box .price-table {
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 12px 35px rgba(55, 79, 66, .14);
-  overflow-x: auto;
 }
 
 .map-link {
@@ -1656,4 +1637,682 @@ body {
 
 .aviso-tabela strong {
   color: #315142;
+}
+/* ===== PADRÃO PREMIUM DAS SEÇÕES ===== */
+
+.services,
+.prices {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f7f5 100%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.title h2,
+.price-header h2 {
+  color: #4E6B5B !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 700 !important;
+}
+
+.title p {
+  color: #718076;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* ===== FILTROS DE EXPERIÊNCIAS ===== */
+
+.filter-area {
+  max-width: 1150px;
+  margin: 0 auto 34px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.filter-area button {
+  background: #ffffff;
+  color: #4E6B5B;
+  border: 1px solid rgba(78, 107, 91, .35);
+  padding: 13px 24px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 14px;
+  box-shadow: 0 8px 22px rgba(78, 107, 91, .08);
+  transition: .25s ease;
+}
+
+.filter-area button:hover,
+.filter-area button.active {
+  background: #4E6B5B;
+  color: #ffffff;
+  border-color: #4E6B5B;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(78, 107, 91, .22);
+}
+
+/* ===== MENSAGENS DE APOIO ===== */
+
+.msg-filtro {
+  max-width: 1150px;
+  margin: 22px auto 0;
+  background: #ffffff;
+  border: 1px solid rgba(78, 107, 91, .12);
+  border-left: 5px solid #6F8F7B;
+  color: #4E6B5B;
+  padding: 18px 22px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(55, 79, 66, .08);
+}
+
+/* ===== TABELA DE INVESTIMENTO ===== */
+
+.prices {
+  position: relative;
+}
+
+.price-header {
+  margin-bottom: 35px !important;
+}
+
+.price-header h2 {
+  font-size: clamp(34px, 4vw, 46px) !important;
+}
+
+.toggle-arrow {
+  background: #6F8F7B !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 25px rgba(78, 107, 91, .22);
+}
+
+.toggle-arrow:hover {
+  background: #4E6B5B !important;
+  transform: translateY(-2px);
+}
+
+#investimentoBox {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+#tabelaMensagem {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* ===== BOTÃO AGENDAR PADRÃO ===== */
+
+.btn,
+.btn-agendar,
+.header-btn,
+button[type="submit"] {
+  background: #5f7f6e !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 14px 22px !important;
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  box-shadow: 0 10px 26px rgba(78, 107, 91, .22) !important;
+  transition: .25s ease !important;
+}
+
+.btn:hover,
+.btn-agendar:hover,
+.header-btn:hover,
+button[type="submit"]:hover {
+  background: #4E6B5B !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 14px 32px rgba(78, 107, 91, .28) !important;
+}
+
+/* Botão específico do header */
+header .btn-agendar,
+header .header-btn,
+header .btn {
+  min-width: 220px;
+  height: 46px;
+  padding: 0 22px !important;
+  border-radius: 10px !important;
+}
+
+/* Ícone do WhatsApp dentro do botão */
+.btn .wpp-icon,
+.btn-agendar .wpp-icon,
+.header-btn .wpp-icon {
+  width: 18px !important;
+  height: 18px !important;
+  background: currentColor !important;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 620px) {
+  .services,
+  .prices {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .filter-area {
+    gap: 10px;
+  }
+
+  .filter-area button {
+    padding: 11px 16px;
+    font-size: 13px;
+  }
+
+  header .btn-agendar,
+  header .header-btn,
+  header .btn {
+    min-width: auto;
+    max-width: 130px !important;
+    height: auto;
+    padding: 8px 10px !important;
+    font-size: 11px !important;
+  }
+}
+.experiencia-ideal {
+  padding: 90px 8%;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f7f5 100%);
+}
+
+.experiencia-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.experiencia-card-fixo {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 48px;
+  box-shadow: 0 28px 70px rgba(55, 79, 66, .14);
+  border: 1px solid rgba(78, 107, 91, .12);
+}
+
+.experiencia-label {
+  color: #6F8F7B;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+}
+
+.experiencia-card-fixo h2 {
+  font-family: "Playfair Display", serif;
+  color: #4E6B5B;
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 1.1;
+  margin: 14px 0;
+}
+
+.experiencia-card-fixo p {
+  color: #617268;
+  line-height: 1.7;
+  max-width: 720px;
+  margin-bottom: 32px;
+}
+
+.experiencia-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-full {
+  grid-column: span 2;
+}
+
+.campo label {
+  color: #4E6B5B;
+  font-weight: 800;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.campo select,
+.campo textarea {
+  width: 100%;
+  border: 1px solid #dfe9e3;
+  background: #f8fbf9;
+  border-radius: 16px;
+  padding: 16px;
+  font-family: inherit;
+  font-size: 15px;
+  color: #315142;
+  outline: none;
+}
+
+.campo textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #6F8F7B;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(111, 143, 123, .13);
+}
+
+.btn-agendar-experiencia {
+  grid-column: span 2;
+  background: #4E6B5B;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 17px 26px;
+  font-weight: 900;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 14px 34px rgba(78, 107, 91, .24);
+  transition: .25s ease;
+}
+
+.btn-agendar-experiencia:hover {
+  background: #3f594a;
+  transform: translateY(-2px);
+}
+
+@media(max-width: 700px) {
+  .experiencia-ideal {
+    padding: 65px 6%;
+  }
+
+  .experiencia-card-fixo {
+    padding: 30px 22px;
+    border-radius: 22px;
+  }
+
+  .experiencia-form {
+    grid-template-columns: 1fr;
+  }
+
+  .campo-full,
+  .btn-agendar-experiencia {
+    grid-column: span 1;
+  }
+}
+/* ===== BOTÃO DARK MODE ===== */
+
+.dark-mode-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  color: #4E6B5B;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,.10);
+  transition: .3s ease;
+}
+
+.dark-mode-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark-mode {
+  background: #111715;
+  color: #f5f5f5;
+}
+
+/* HEADER */
+
+body.dark-mode header {
+  background: #161d1a;
+  box-shadow: 0 2px 18px rgba(0,0,0,.35);
+}
+
+body.dark-mode nav a {
+  color: #f3f5f4;
+}
+
+/* HERO */
+
+body.dark-mode .hero {
+  background-blend-mode: multiply;
+}
+
+/* SECTIONS */
+
+body.dark-mode section,
+body.dark-mode .differentials,
+body.dark-mode .booking,
+body.dark-mode .prices,
+body.dark-mode .empresas,
+body.dark-mode .cursos {
+  background: #111715 !important;
+}
+
+/* CARDS */
+
+body.dark-mode .card,
+body.dark-mode .service-card,
+body.dark-mode .price-table,
+body.dark-mode .booking-box,
+body.dark-mode .empresa-box,
+body.dark-mode .experiencia-card-fixo {
+  background: #18211d !important;
+  border-color: rgba(255,255,255,.06);
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+
+/* TEXTOS */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode strong,
+body.dark-mode td,
+body.dark-mode th,
+body.dark-mode label {
+  color: #f3f5f4 !important;
+}
+
+/* INPUTS */
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background: #1e2924 !important;
+  border-color: #31473b !important;
+  color: #ffffff !important;
+}
+
+/* TABELA */
+
+body.dark-mode td {
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+body.dark-mode tr:hover {
+  background: rgba(255,255,255,.03);
+}
+
+/* FILTROS */
+
+body.dark-mode .filter-area button {
+  background: #1b2521;
+  color: #ffffff;
+  border-color: #31473b;
+}
+
+body.dark-mode .filter-area button.active,
+body.dark-mode .filter-area button:hover {
+  background: #4E6B5B;
+}
+
+/* FOOTER */
+
+body.dark-mode footer {
+  background: #0c100e;
+}
+/* ===== CORREÇÕES DARK MODE ===== */
+
+/* 1. Hero com imagem aparecendo */
+body.dark-mode .hero {
+  background:
+    linear-gradient(90deg, rgba(10, 18, 14, .78), rgba(20, 34, 27, .58), rgba(10, 18, 14, .20)),
+    url("capa.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* 2. Mensagens de Experiências e Tabela */
+body.dark-mode .msg-filtro {
+  background: #18221d !important;
+  color: #dfece5 !important;
+  border: 1px solid rgba(168, 191, 176, .22) !important;
+  border-left: 5px solid #6F8F7B !important;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .28) !important;
+}
+
+/* 3. Informações importantes do agendamento */
+body.dark-mode .info-agendamento {
+  background: #18221d !important;
+  color: #dfece5 !important;
+  border-left: 5px solid #6F8F7B !important;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .28) !important;
+}
+
+body.dark-mode .info-agendamento strong {
+  color: #ffffff !important;
+}
+
+/* 4. Corrigir textos apagados dentro das mensagens */
+body.dark-mode .msg-filtro,
+body.dark-mode .msg-filtro *,
+body.dark-mode .info-agendamento,
+body.dark-mode .info-agendamento * {
+  color: #dfece5 !important;
+}
+
+/* 5. Campos do agendamento mais legíveis */
+body.dark-mode .booking-box {
+  background: #18221d !important;
+}
+
+body.dark-mode .booking-box input,
+body.dark-mode .booking-box select {
+  background: #111a16 !important;
+  color: #ffffff !important;
+  border-color: rgba(168, 191, 176, .25) !important;
+}
+
+body.dark-mode .booking-box input::placeholder {
+  color: rgba(255, 255, 255, .55) !important;
+}
+/* ===== ÍCONES/EMOJIS NO DARK MODE ===== */
+
+body.dark-mode .icon-circle,
+body.dark-mode .icon-box,
+body.dark-mode .hero-icon,
+body.dark-mode .diferencial-icon {
+  background: #18221d !important;
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,.30);
+}
+
+/* ===== BOTÃO DARK MODE ===== */
+
+/* QUANDO ESTIVER ESCURO → LUA APARECE */
+body.dark-mode .dark-mode-btn {
+  background: #18221d !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+/* QUANDO ESTIVER CLARO → SOL APARECE */
+body:not(.dark-mode) .dark-mode-btn {
+  background: #ffffff !important;
+  color: #4E6B5B !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,.10);
+}
+/* ===== ÍCONES DOS DIFERENCIAIS ===== */
+
+body.dark-mode .diferencial-item i,
+body.dark-mode .diferencial-item .icon,
+body.dark-mode .diferencial-item .icone,
+body.dark-mode .diferencial-item .icon-circle,
+body.dark-mode .diferencial-item .icon-box,
+body.dark-mode .diferencial-item span:first-child {
+  background: linear-gradient(145deg, #1c2b24, #24352d) !important;
+  color: #dfece5 !important;
+  border: 1px solid rgba(168,191,176,.15) !important;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.03);
+}
+
+/* REMOVE FUNDO BRANCO */
+body.dark-mode .diferencial-item * {
+  background-color: transparent;
+}
+
+/* RESTAURA O FUNDO DOS ÍCONES */
+body.dark-mode .diferencial-item .icon-circle,
+body.dark-mode .diferencial-item .icon-box,
+body.dark-mode .diferencial-item i,
+body.dark-mode .diferencial-item span:first-child {
+  background: linear-gradient(145deg, #1c2b24, #24352d) !important;
+}
+/* ===== ÍCONES SVG DARK MODE ===== */
+
+body.dark-mode .hero-features li {
+  background: transparent !important;
+}
+
+body.dark-mode .hero-features svg {
+  width: 24px;
+  height: 24px;
+
+  padding: 14px;
+  border-radius: 50%;
+
+  background: linear-gradient(145deg, #1d2b24, #24352d) !important;
+
+  stroke: #dfece5 !important;
+  fill: none !important;
+
+  border: 1px solid rgba(168,191,176,.14);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.03);
+}
+/* ===== CORREÇÃO DEFINITIVA DOS ÍCONES ===== */
+
+body.dark-mode .hero-features li span,
+body.dark-mode .hero-features li div,
+body.dark-mode .hero-features li i,
+body.dark-mode .hero-features li .icon,
+body.dark-mode .hero-features li .icon-box {
+  background: linear-gradient(145deg, #1d2b24, #24352d) !important;
+
+  border: 1px solid rgba(168,191,176,.14);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.03);
+
+  border-radius: 50% !important;
+}
+
+/* SVG */
+
+body.dark-mode .hero-features svg {
+  stroke: #dfece5 !important;
+  fill: none !important;
+  background: transparent !important;
+}
+/* ===== ÍCONES DIFERENCIAIS DARK MODE ===== */
+
+body.dark-mode .diff-item span {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(145deg, #1d2b24, #26372f) !important;
+
+  border: 1px solid rgba(168,191,176,.14);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.03);
+}
+
+/* SVG */
+
+body.dark-mode .diff-item svg {
+  width: 24px;
+  height: 24px;
+
+  stroke: #dfece5 !important;
+  fill: none !important;
+
+  background: transparent !important;
+}
+#investimentoBox {
+  display: none;
+  width: 100%;
+  margin-top: 25px;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+#investimentoBox .table-scroll {
+  display: block !important;
+  max-height: 430px !important;
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+  background: #fff !important;
+  border-radius: 14px !important;
+  box-shadow: 0 12px 35px rgba(55, 79, 66, .14) !important;
+}
+
+#investimentoBox table {
+  display: table !important;
+  width: 100% !important;
+  min-width: 780px !important;
+  border-collapse: collapse !important;
+  background: #fff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#investimentoBox thead {
+  display: table-header-group !important;
+}
+
+#investimentoBox tbody {
+  display: table-row-group !important;
+}
+
+#investimentoBox tr {
+  display: table-row !important;
+}
+
+#investimentoBox th,
+#investimentoBox td {
+  display: table-cell !important;
+  padding: 14px 15px !important;
+  border-bottom: 1px solid #e8eee9 !important;
+  color: #59665d !important;
+  font-size: 14px !important;
+}
+
+#investimentoBox th {
+  background: #4E6B5B !important;
+  color: #fff !important;
+}
+
+#investimentoBox td strong {
+  color: #4E6B5B !important;
 }
