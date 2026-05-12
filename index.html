@@ -741,13 +741,19 @@
 
       <div class="experiencia-form">
 
+        <div class="campo campo-full">
+          <label for="descricaoTratamento">Descreva o que você busca com o tratamento</label>
+          <textarea id="descricaoTratamento" placeholder="Ex: Estou com tensão no corpo, cansaço mental e buscando relaxar profundamente..."></textarea>
+        </div>
+
         <div class="campo">
-          <label for="tempoLivre">Quanto tempo você tem livre?</label>
+          <label for="tempoLivre">Quanto tempo você deseja reservar para seu momento de cuidado?</label>
           <select id="tempoLivre">
             <option value="">Selecione uma opção</option>
             <option value="Até 30 minutos">Até 30 minutos</option>
-            <option value="Aproximadamente 1 hora">Aproximadamente 1 hora</option>
-            <option value="Experiência completa">Experiência completa</option>
+            <option value="1 hora">1 hora</option>
+            <option value="1 hora 30 minutos">1 hora 30 minutos</option>
+            <option value="2 horas ou mais">2 horas ou mais</option>
           </select>
         </div>
 
@@ -764,13 +770,8 @@
           </select>
         </div>
 
-        <div class="campo campo-full">
-          <label for="descricaoTratamento">Descreva o que você busca com o tratamento</label>
-          <textarea id="descricaoTratamento" placeholder="Ex: Estou com tensão nas costas, muito cansaço físico e quero algo para relaxar profundamente..."></textarea>
-        </div>
-
         <button class="btn-agendar-experiencia" onclick="agendarExperiencia()">
-          Quero meu agendamento
+          Quero minha indicação personalizada.
         </button>
 
       </div>
@@ -893,7 +894,7 @@
       </a>
     </div>
   </section>
-
+  
   <section class="empresas" id="empresas">
     <div class="title">
       <h2>Atendimento para Empresas</h2>
