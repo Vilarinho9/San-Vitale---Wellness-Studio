@@ -6,7 +6,7 @@
 
   <title>San Vitale - Wellness Studio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="capa.jpg" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,6 +30,10 @@
     <a href="#empresas">Empresas</a>
     <a href="#cursos">Cursos</a>
   </nav>
+
+  <button id="darkModeBtn" class="dark-mode-btn">
+  🌙
+</button>
 
   <a href="#agendamento" class="btn-agendar">
     <span class="wpp-icon"></span>
@@ -638,16 +642,19 @@
     <div class="price-header">
       <h2>Tabela de Investimento</h2>
 
-      <button type="button" id="btnInvestimento" class="toggle-arrow" onclick="abrirInvestimento()">
-        ▼
-      </button>
+      <button type="button" id="btnInvestimento" class="toggle-arrow">
+  ▼
+</button>
     </div>
 
     <div id="msgTabela" class="msg-filtro">
     Clique no botão acima para visualizar a tabela de valores
 </div>
 
-    <div id="investimentoBox" class="investimento-box" style="display: none;">
+  </div>
+</section>
+
+<div id="investimentoBox" class="investimento-box" style="display: none;">
       <div class="table-scroll">
         <table>
           <thead>
@@ -719,6 +726,56 @@
     </div>
   </section>
 
+    <section class="experiencia-ideal" id="experiencia-ideal">
+  <div class="experiencia-container">
+
+    <div class="experiencia-card-fixo">
+      <span class="experiencia-label">Experiência personalizada</span>
+
+      <h2>Encontre o cuidado ideal para o seu momento.</h2>
+
+      <p>
+        Informe o tempo disponível, o tipo de terapia desejada e conte brevemente
+        o que você busca com o tratamento.
+      </p>
+
+      <div class="experiencia-form">
+
+        <div class="campo">
+          <label for="tempoLivre">Quanto tempo você tem livre?</label>
+          <select id="tempoLivre">
+            <option value="">Selecione uma opção</option>
+            <option value="Até 30 minutos">Até 30 minutos</option>
+            <option value="Aproximadamente 1 hora">Aproximadamente 1 hora</option>
+            <option value="Experiência completa">Experiência completa</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="tipoTerapia">Que tipo de terapia você procura?</label>
+          <select id="tipoTerapia">
+            <option value="">Selecione uma opção</option>
+            <option value="Alívio de dores">Alívio de dores</option>
+            <option value="Relaxamento">Relaxamento</option>
+            <option value="Estética e autoestima">Estética e autoestima</option>
+            <option value="Equilíbrio energético">Equilíbrio energético</option>
+            <option value="Terapias vibracionais">Terapias vibracionais</option>
+            <option value="Não sei ainda, quero orientação">Não sei ainda, quero orientação</option>
+          </select>
+        </div>
+
+        <div class="campo campo-full">
+          <label for="descricaoTratamento">Descreva o que você busca com o tratamento</label>
+          <textarea id="descricaoTratamento" placeholder="Ex: Estou com tensão nas costas, muito cansaço físico e quero algo para relaxar profundamente..."></textarea>
+        </div>
+
+        <button class="btn-agendar-experiencia" onclick="agendarExperiencia()">
+          Quero meu agendamento
+        </button>
+
+      </div>
+    </div>
+  
   <section class="agendamento" id="agendamento">
     <div class="title">
       <h2>Agende sua Sessão</h2>
@@ -857,7 +914,7 @@
           <option>Dia de bem-estar corporativo</option>
           <option>Parceria para colaboradores</option>
           <option>Evento empresarial</option>
-          <option>Pacote personalizado</option>
+          <option>Outros</option>
         </select>
       </div>
 
@@ -912,7 +969,7 @@
       <a href="#experiencias">Medicina estética</a>
       <a href="#experiencias">Terapias Energéticas</a>
       <a href="#experiencias">Cuidados de Beleza</a>
-      <a href="#experiencias">Alacarte de SPA</a>
+      <a href="#experiencias">A la carte de SPA</a>
     </div>
 
     <div>
