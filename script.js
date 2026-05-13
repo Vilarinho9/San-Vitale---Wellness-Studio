@@ -97,96 +97,27 @@ function enviarEmpresaWhatsApp(event) {
 
 function agendarExperiencia() {
   const tempo = document.getElementById("tempoLivre")?.value || "";
-  const terapia = document.getElementById("tipoTerapia")?.value || "";
   const descricao = document.getElementById("descricaoTratamento")?.value.trim() || "";
 
-  if (!tempo) {
-    alert("Selecione quanto tempo você tem livre.");
-    return;
-  }
-
-  if (!terapia) {
-    alert("Selecione o tipo de terapia desejada.");
-    return;
-  }
-
   if (descricao.length < 5) {
     alert("Descreva um pouco melhor o que você busca com o tratamento.");
     return;
   }
+
+  if (!tempo) {
+    alert("Selecione quanto tempo você deseja reservar.");
+    return;
+  }
+
+  const numeroWhatsApp = "5586998055995";
 
   const mensagem =
-    `Olá! Gostaria de agendar uma experiência na San Vitale.\n\n` +
-    `Tempo disponível: ${tempo}\n` +
-    `Tipo de terapia desejada: ${terapia}\n` +
-    `Descrição: ${descricao}`;
-
-  window.open(
-    `https://wa.me/5586998055995?text=${encodeURIComponent(mensagem)}`,
-    "_blank"
-  );
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll("#nav a");
-
-  navLinks.forEach(link => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      navLinks.forEach(item => item.classList.remove("active"));
-      this.classList.add("active");
-
-      const destino = document.querySelector(this.getAttribute("href"));
-
-      if (destino) {
-        destino.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }
-
-      const nav = document.getElementById("nav");
-      if (nav) nav.classList.remove("show");
-    });
-  });
-});
-function agendarExperiencia() {
-  const tempo = document.getElementById("tempoLivre").value;
-  const terapia = document.getElementById("tipoTerapia").value;
-  const descricao = document.getElementById("descricaoTratamento").value.trim();
-
-  if (!tempo) {
-    alert("Selecione quanto tempo você tem livre.");
-    return;
-  }
-
-  if (!terapia) {
-    alert("Selecione o tipo de terapia que você procura.");
-    return;
-  }
-
-  if (descricao.length < 5) {
-    alert("Descreva um pouco melhor o que você busca com o tratamento.");
-    return;
-  }
-
-  const numeroWhatsApp = "5586999999999";
-
-  const mensagem = `
-Olá! Gostaria de agendar uma experiência na San Vitale.
-
-Tempo disponível:
-${tempo}
-
-Tipo de terapia desejada:
-${terapia}
-
-Descrição do que busco com o tratamento:
-${descricao}
-`;
+    `Olá! Gostaria de receber uma indicação personalizada da San Vitale.\n\n` +
+    `Tempo disponível: ${tempo}\n\n` +
+    `O que busco com o tratamento:\n${descricao}`;
 
   const link = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
   window.open(link, "_blank");
 }
 const darkModeBtn =
